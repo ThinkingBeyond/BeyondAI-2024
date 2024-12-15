@@ -21,6 +21,10 @@ In Multi-layer Perceptrons (**MLP**s), how the weights are initialized is very i
 * How do initialization methods interact with other factors, like activation functions, optimizers and MLP Depth?
 * Can we pinpoint the best weight initialization strategies in different scenarios?
 
+## Setting Up the Environment
+
+This project includes a `requirements.txt` file that lists all the Python packages and their versions used in this project. You can use this file to recreate the exact environment required to run the code.
+
 # Methodology & Implementation
 
 We ran 3 main experiments to analyze the performance of Weight Initialization Methods including Zero Initialization, Random (Gaussian) Initialization, Xavier Initialization, and He Initialization. 
