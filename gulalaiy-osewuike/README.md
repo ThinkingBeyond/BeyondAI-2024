@@ -25,6 +25,18 @@ In Multi-layer Perceptrons (**MLP**s), how the weights are initialized is very i
 
 This project includes a `requirements.txt` file that lists all the Python packages and their versions used in this project. You can use this file to recreate the exact environment required to run the code.
 
+## Dataset
+
+This project uses the MNIST dataset for training and evaluation. To ensure that users do not need to manually download the dataset, the Colab notebook automatically fetches the required data file every time it is run.
+
+**How It Works**
+
+The following command in the notebook downloads the MNIST dataset (`mnist.pkl.gz`) from an open GitHub repository:
+
+```bash
+!wget -O mnist.pkl https://github.com/mnielsen/neural-networks-and-deep-learning/raw/master/data/mnist.pkl.gz
+```
+
 # Methodology & Implementation
 
 We ran 3 main experiments to analyze the performance of Weight Initialization Methods including Zero Initialization, Random (Gaussian) Initialization, Xavier Initialization, and He Initialization. 
