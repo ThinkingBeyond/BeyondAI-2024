@@ -2,19 +2,52 @@
 
 # Comparing Transformers to LSTMs with Attention
 
-# Motivation:
-The "Attention is All You Need" paper introduced the Transformer model, which has revolutionized natural language processing (NLP). This research aims to compare the performance of Transformers to LSTMs with attention mechanisms, which were a dominant approach before Transformers. Understanding the strengths and weaknesses of each architecture is crucial for making informed choices in NLP tasks.
+## Motivation
 
-# Research Question:
-After our thorough literature review, we decided to focus our research on the following question: How do Transformers compare to LSTMs with attention in performance and efficiency for text-based sentiment analysis?
+The "Attention is All You Need" paper introduced the Transformer model, a milestone that revolutionized natural language processing (NLP). Before this, LSTMs with attention mechanisms dominated the field. By comparing these two architectures, this research aims to provide insights into their strengths, weaknesses, and suitability for NLP tasks.
 
-# Method and Implementation:
-Our approach was to read as much literature as we could find centred around the cornerstone "Attention is all you need" paper, as well as various LSTM focused research as well. After familiarising ourselves with the architectures of both models, we worked to implement them. After choosing and preparing the dataset of our choice, which was the IMDB dataset of positive and negative movie reviews, we worked together on google colab under the supervision of our mentor to design and then programme these models. Once complete, we then tested various metrics on our models to measure accuracy and precision, through metrics such as training time, memory usage and inference speed.
+## Research Question
 
-# Results:
-What we found from our tests was that the transformer outperformed the LSTM for all metrics for accuracy and precision under similar training time, which we tried to keep as similar as possible to gain comparable results. What we did find however was that the transformer required more memory usage, and was therefore more resource intensive. 
+How do Transformers compare to LSTMs with attention in performance and efficiency for text-based sentiment analysis?
 
-# Conclusions:
-Transformers generally outperform LSTMs with Attention in sentiment analysis tasks, excelling in both performance and efficiency. This makes them ideal for larger datasets and faster processing. However, LSTMs with Attention remain a viable alternative for scenarios with limited computational resources or a need for smaller models. Future research could explore hybrid models that combine the strengths of both architectures or investigate the application of Transformers to smaller, less structured datasets.
+## Methodology
 
-> The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
+To address this question, we:
+
+1. **Conducted a Literature Review**: We reviewed foundational papers, including "Attention is All You Need" and seminal works on LSTMs with attention mechanisms.
+
+2. **Dataset Selection**: The IMDb reviews dataset, containing 50,000 evenly split positive and negative movie reviews, was chosen for its balance and suitability for binary classification tasks.
+
+3. **Model Implementation**: Under our mentor's guidance, we implemented both models in Google Colab using the PyTorch library:
+
+   - **Transformer**: Leveraging pre-trained BERT, we built a Transformer network with a classification head.
+   - **LSTM with Attention**: Using existing libraries, we implemented an LSTM network enhanced by an attention mechanism.
+
+4. **Evaluation Metrics**: To compare performance and efficiency, we measured:
+
+   - **Accuracy, Precision, Recall, and F1-Score**: To assess prediction quality.
+   - **Training Time and Inference Speed**: For efficiency comparison.
+   - **Memory Usage**: To evaluate computational resource requirements.
+
+## Results
+
+Our findings highlighted:
+
+- **Performance**: Transformers achieved higher accuracy, precision, recall, and F1-scores compared to LSTMs with attention. They excel at handling long-range dependencies and complex sentence structures.
+- **Efficiency**:
+  - **Training Time**: Transformers required slightly more time (~6 minutes vs. ~5 minutes for LSTMs over 5 epochs).
+  - **Inference Speed**: Transformers processed inputs faster (~12 ms/example vs. ~20 ms/example for LSTMs).
+  - **Memory Usage**: Transformers demanded significantly more memory (2.5 GB vs. 1.5 GB for LSTMs during training).
+- **Resource Sensitivity**: While Transformers excel in performance, their higher computational demands make LSTMs preferable for resource-constrained environments.
+
+## Conclusions
+
+Transformers demonstrate superior performance and efficiency in sentiment analysis tasks, making them ideal for large datasets and scenarios requiring scalability and high accuracy. However, LSTMs with attention remain a practical choice for smaller datasets or low-resource environments.
+
+### Key Takeaways
+
+- **Transformer Advantages**: Scalability, parallel processing, and exceptional handling of long-text dependencies.
+- **LSTM with Attention Advantages**: Lower memory usage, simpler architecture, and suitability for small-scale applications.
+
+> **Further Reading**: A detailed overview of this project is presented in our research poster, available in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
+
