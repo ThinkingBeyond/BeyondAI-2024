@@ -1,0 +1,4 @@
+torch-geometric=2.4.0
+sgp4=2.22
+networkx=3.0
+matplotlib=3.7.0
