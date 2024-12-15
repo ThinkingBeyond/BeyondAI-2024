@@ -17,4 +17,4 @@ What we found from our tests was that the transformer outperformed the LSTM for 
 # Conclusions:
 Transformers generally outperform LSTMs with Attention in sentiment analysis tasks, excelling in both performance and efficiency. This makes them ideal for larger datasets and faster processing. However, LSTMs with Attention remain a viable alternative for scenarios with limited computational resources or a need for smaller models. Future research could explore hybrid models that combine the strengths of both architectures or investigate the application of Transformers to smaller, less structured datasets.
 
-# > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
+> The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
