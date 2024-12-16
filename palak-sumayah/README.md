@@ -48,7 +48,7 @@ The models were implemented using Python and the scikit-learn library, which pro
 # Results
 In the analysis of the Moon dataset with high noise, the classifiers exhibited varying performance based on their strengths and limitations in handling noisy, non-linearly separable data.
 SVM (RBF kernel) emerged as the top performer, slightly outperforming Logistic Regression by capturing complex, non-linear patterns in the data.
-Logistic Regression and Naive Bayes both showed solid performance (81%), but were less effective in managing the noise, with Naive Bayes struggling due to its assumptions about feature independence.
+Logistic Regression and Naive Bayes both showed solid performance, but were less effective in managing the noise, with Naive Bayes struggling due to its assumptions about feature independence.
 Random Forest and Gradient Boosting demonstrated robust performance, especially in terms of recall, but were still affected by the high noise levels, reducing their ability to generalize effectively. Gradient Boosting showed the best balance between precision and recall, making it a reliable choice despite the noise.
 Decision Tree performed the weakest, struggling with overfitting and failing to generalize in the noisy environment.
 
