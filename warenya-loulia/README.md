@@ -11,12 +11,26 @@ Conventional methods for modeling the dynamics of robots often depend on intrica
 
 The project was built with the intention of understanding how well the implemented GCA-MLP learns and interprets spatial relationships, to use it in robotics - more specifically aerial robotics, we needed a clear intuition of the behavior of our MLP in various tasks.
 
-### Technologies, Libraries and Datasets:
+
+### Technologies, Libraries and Datasets
 1. **GCA-MLP** <br>
 CliffordLayers - a type of neural network layers inspired by geometric Clifford algebras was used in implementing the MLP. The intention behind using CliffordLayers was the ability to expand operations such as convolutions and Fourier transforms over multivector fields (Microsoft Research, 2023).
 
 2. **Tetris Trajectory Prediction** <br>
-Draft 1 and draft 2 are both attempts to reproduce Ruhe's (2023) tetris trajectory application. As the  
+Draft 1 and draft 2 are both attempts to reproduce Ruhe's (2023) tetris trajectory application.
+
+3. **Testing MNIST and IRIS** <br>
+As apparent in the name, the MNIST and IRIS datasets were used for testing the MLP in 2d applications like image recognition, the datasets can be imported in Google Colab from Sklearn.
+
+4. **Dummy Robot Application** <br>
+The ARKOMA dataset for NAO robot arms was used here. The dataset is referenced, and can be downloaded from https://data.mendeley.com/datasets/brg4dz8nbb/1/files/8912a634-6f54-48db-9a97-67a782e49ff8
+
+---
+
+ # How to Install and Run the Project
+
+ Run the provided .ipynb files in Google Colab!
+ 1. 
 
 Generally, the GCA-MLP showed decent accuracy during testing (85%-90%), and low loss by the last epoch (0.5 by the 50th epoch in the robot dynamics experiment). However, the GCA-MLP consumes a considerable amount of time to converge. As addressed in the GCAN paper, the problem of higher computational density can be addressed by using hardware accelerators like GPUs. In scenarios which require a faster time for convergence such as robotic motion, we suspect that the model will require some form of modification. The Geometric Algebra Transformers (GATr) paper by Brehmer et al. appears to be a promising route for future research on geometric algebra in robotics.
 
