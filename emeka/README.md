@@ -2,51 +2,51 @@
 
 # Kolmogrov Arnold Networks vs Multi-Layer Perceptrons 
 
-Provide a description of your project including 
-
-1. Motivation for the Research Question
-   
-While analyzing the paper written by Ziming Lui and partners,it was stated that the new network called KANs were going to overperform the MLPs in terms of convergence rate and accuracy with minimum number of layers. The outcome of their research seemed promising, but as a researcher, I decided to test the claim made and compare both models together to ascertain what was claimed. 
-
-2. Research Question: I came up with three research question to prove/ refute this claim.
-
-i. Do Kolmogorov Arnold Networks (KANs) exhibit faster convergence compared to Multi-Layer Perceptrons (MLPs) across different problem domains, particularly in low-dimensional and high-dimensional tasks?
-
-ii. How do Kolmogorov Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) compare in terms of performance metrics such as accuracy, f1 score, and recall, and what insights can be drawn about their strengths and weaknesses in handling various classification tasks?
-
-iii. How do Kolmogorov Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) address generalization challenges (overfitting, underfitting) when using their optimal hyperparameters, and how does hyperparameter tuning affect the stability of their training processes?
+## Project Description
+This project focuses on comparing Kolmogorov-Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) in classification tasks. The primary goal is to evaluate the claim made by Ziming Liu and colleagues in their paper, which suggests that KANs outperform MLPs. Through detailed analysis and experimentation, this study aims to validate or challenge their assertion.
 
 
+## Motivation
+Introduction of newer neural network architectures, like Kolmogorov-Arnold Networks (KANs), offers promising alternatives to traditional models such as Multi-Layer Perceptrons (MLPs). KANs claim to provide superior performance in terms of flexibility, convergence rates, and handling complex non-linear problems. However, these claims need to be tested on real-world datasets.
+The motivation behind the project is to bridge the gap by comparing the performance of KANs and MLPs across multiple metrics, including accuracy, loss, convergence behavior,f1 score, precision, recall, and execution time. By doing so, the study seeks to provide valuable insights for researchers and industries making use of these models to guide them in model selection for classification tasks.
+## Research Questions
+1. Do Kolmogorov Arnold Networks (KANs) exhibit faster convergence compared to Multi-Layer Perceptrons (MLPs) across different datasets, for instance, low-datapoint and high-datapoints datasets?
 
-3. Methodology
+2. How do Kolmogorov Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) compare in terms of performance metrics such as accuracy,loss,f1 score,precision, and recall, and what insights can be drawn about their strengths and weaknesses in handling various classification tasks?
 
-Using MLPClassifier from sklearn
+3. How do Kolmogorov Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) address generalization challenges (overfitting, underfitting), and how does hyperparameter tuning affect the stability of their training processes?
 
-Using pykan from the paper 
 
-I used two different datasets one with higher number of datapoints, and the other with relatively lower number.
 
-Using the train and test split to divide my dataset and study the recalling capacity.
+## Methodology
+1. **Datasets**:  
+   - **Wine Dataset**: 174 samples with 13 features, classifying 3 wine types.  
+   - **Wisconsin Breast Cancer Dataset**: 699 samples with 9 features, classifying 2 cancer types (benign vs. malignant).  
+   - Preprocessing included standardization and train-test splitting.  
 
-I plotted an accuracy curve as well as a loss curve to Visualize convergence rate or each of the model.
+2. **Model Implementation**:  
+   - **KANs**:  
+     - **Wine Dataset**: `width=[13,5,3]`, `grid=5`, `k=3`.  
+     - **Cancer Dataset**: `width=[9,5,5,5,2]`, `grid=5`, `k=3`.  
+   - **MLPs**:  
+     - **Wine Dataset**: `hidden_layer_sizes=(40,25,10)`, `max_iter=500`, `activation='tanh'`.  
+     - **Cancer Dataset**: `hidden_layer_sizes=(5,5,5)`, `max_iter=1000`, `activation='tanh'`.  
+   - Hyperparameters were optimized using GridSearchCV.  
 
-I also used larger epochs to test for overfitting in the modes.
+3. **Metrics for Evaluation**:  
+   - **Accuracy**: Measure of classification correctness.  
+   - **Loss**: Convergence and overfitting behavior.  
+   - **Precision, Recall, F1-Score**: Class-specific performance.  
+   - **Execution Time**: Computational efficiency.  
 
-4. Result
-In accordance to the research question
+4. **Training and Comparison**:  
+   - Both models were trained over 100 epochs.  
+   - Results included convergence curves for loss and accuracy, and confusion matrices to evaluate predictions.  
 
-i. Based on convergence rate,MLPs converge to an accuracy range of (97-100)%, while KANs didn't converge and also had a very fluctuating accuracy despite a longer execution time.
+5. **Libraries**: `sklearn`, `pytorch`, `matplotlib`, `pykan`.  
 
-ii. In terms of accuracy MLP had higher accuracy than KANs, the highest accuracy attained by KANs was 97.5% while that of MLPs was 100%. 
+## Result(to be refined)
 
-In terms of f1 score, that of MLPs was higher than that of KANs.
-
-In terms of recall, both models didn't recall poperly but MLP recalled better.
-
-iii. The MLPs begin to overfit with datasets of a out 7000 datapoints at about 75-80 epochs. KANs had fluctuating accuracies and loss, it also didn't converge,and in turn doesn't generalize well.
-
-5. Conclusions
-
-Overall, I'll say MLPs perform better than KANs in terms of comparison task.
+## Conclusions
 
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
