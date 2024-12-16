@@ -37,8 +37,6 @@ This project includes a `requirements.txt` file that lists all the Python packag
 
 This project uses the MNIST dataset for training and evaluation. To ensure that users do not need to manually download the dataset, the Colab notebook automatically fetches the required data file every time it is run.
 
----
-
 **How It Works**
 
 The following command in the notebook downloads the MNIST dataset (`mnist.pkl.gz`) from an open GitHub repository:
