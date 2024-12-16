@@ -53,9 +53,9 @@ Random Forest and Gradient Boosting demonstrated robust performance, especially 
 Decision Tree performed the weakest, struggling with overfitting and failing to generalize in the noisy environment.
 
 # Conclusions 
-Logistic Regression and Naive Bayes are faster but less accurate.
-Random Forest and Gradient Boosting are effective for noisy or imbalanced datasets, balancing accuracy and robustness while reducing overfitting, though they are more computationally expensive than simpler classifiers.
-Overall, non-linear classifiers like SVM, Random Forest, and Gradient Boosting showed superior performance in dealing with noisy, complex data, while simpler linear classifiers, such as Logistic Regression and Naive Bayes, were less effective in this context.
+- Logistic Regression and Naive Bayes are faster but less accurate.
+- Random Forest and Gradient Boosting are effective for noisy or imbalanced datasets, balancing accuracy and robustness while reducing overfitting, though they are more computationally expensive than simpler classifiers.
+- Overall, non-linear classifiers like SVM, Random Forest, and Gradient Boosting showed superior performance in dealing with noisy, complex data, while simpler linear classifiers, such as Logistic Regression and Naive Bayes, were less effective in this context.
 
 
 
