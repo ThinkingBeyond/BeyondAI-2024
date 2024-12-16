@@ -17,7 +17,7 @@
   
 In Multi-layer Perceptrons (**MLP**s), how the weights are initialized is very important in the training process, as well as the overall performance of the MLP. The right initialization can make training faster, avoid problems like vanishing or exploding gradients, and generally lead to better performance. This project looks into how different weight initialization methods impact MLPs' performance. We’re also interested in how these methods work together with things like **activation functions** and **optimizers**. Ultimately, the goal is to figure out which initialization strategies work best for different situations.
 
----
+
 
 ## The Research Questions we aim to answer include:
 
