@@ -1,6 +1,6 @@
 ![BeyondAI Banner for Research Projects](../BeyondAI_Banner_Research_Projects_2024.png)
 
-# Kolmogrov Arnold Networks vs Multi-Layer Perceptrons 
+# Kolmogorov Arnold Networks vs Multi-Layer Perceptrons 
 
 ## Project Description
 This project focuses on comparing Kolmogorov-Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) in classification tasks. The primary goal is to evaluate the claim made by Ziming Liu and colleagues in their paper, which suggests that KANs outperform MLPs. Through detailed analysis and experimentation, this study aims to validate or challenge their assertion.
@@ -31,7 +31,7 @@ The motivation behind the project is to bridge the gap by comparing the performa
    - **MLPs**:  
      - **Wine Dataset**: `hidden_layer_sizes=(40,25,10)`, `max_iter=500`, `activation='tanh'`.  
      - **Cancer Dataset**: `hidden_layer_sizes=(5,5,5)`, `max_iter=1000`, `activation='tanh'`.  
-   - Hyperparameters were optimized using GridSearchCV.  
+     - Different width of KANs lower than the number of layers would be used 
 
 3. **Metrics for Evaluation**:  
    - **Accuracy**: Measure of classification correctness.  
@@ -40,7 +40,7 @@ The motivation behind the project is to bridge the gap by comparing the performa
    - **Execution Time**: Computational efficiency.  
 
 4. **Training and Comparison**:  
-   - Both models were trained over 100 epochs.  
+   - Both models were trained over 100 epochs using different set of hidden layers 
    - Results included convergence curves for loss and accuracy, and confusion matrices to evaluate predictions.  
 
 5. **Libraries**: `sklearn`, `pytorch`, `matplotlib`, `pykan`.  
