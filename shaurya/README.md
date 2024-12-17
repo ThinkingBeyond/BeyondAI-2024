@@ -2,11 +2,11 @@
 
 # DOUBLE DESCENT VS OVERFITTING IN DEEP LEARNING
 
-### OVERFITTING:
+## OVERFITTING:
 
 Overfitting occurs in machine learning when a model learns the training data too well, including its noise and random fluctuations, rather than capturing the underlying patterns. As a result, the model performs well on the training data but poorly on unseen or test data.
 
-### DOUBLE DESCENT:
+## DOUBLE DESCENT:
 
 Double descent is a machine learning phenomenon where a model's error on unseen data doesn't just keep increasing as the model gets more complex. Instead, after initially worsening, the error improves again if the model becomes very complex. This challenges the old idea that more complexity always leads to worse performance.
 
