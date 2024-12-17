@@ -3,7 +3,7 @@
 # An Elementary Proof of the Universal Approximation Theorem for Multilayer Perceptrons
 
 ## Research question 
-Our research question was to expand on Nielsen's proof for the **Universal Approximation Theorem for Multilayer Perceptrons** which he provided in his online textbook, Neural Networks and Deep Learning. We showed that any **continuous function** on the real numbers can be approximated by a **Multilayer Perceptron** (MLP) with several hidden layers and a finite number of neurons, using the **sigmoid** activation function. We also proved that **piecewise functions**, constructed using MLPs with **ReLU** activation, can also approximate any continuous function. Our aim was that our proof would be intuitive and easy to understand, and would use visualisations to help the reader grasp the concepts being used.
+Our research question was to expand on Nielsen's proof for the **Universal Approximation Theorem for Multilayer Perceptrons** which he provided in his online textbook, Neural Networks and Deep Learning[^1]. We showed that any **continuous function** on the real numbers can be approximated by a **Multilayer Perceptron** (MLP) with several hidden layers and a finite number of neurons, using the **sigmoid** activation function. We also proved that **piecewise functions**, constructed using MLPs with **ReLU** activation, can also approximate any continuous function. Our aim was that our proof would be intuitive and easy to understand, and would use visualisations to help the reader grasp the concepts being used.
 
 ## Motivation 
 The universal approximation theorem states that a **Multilayer Perceptron** with a finite number of neurons and a single hidden layer can approximate any **continuous function**. The original proofs of the universal approximation theorem involve **advanced mathematics** such as the Hahn-Banach theorem, the Riesz Representation theorem, Fourier analysis and the Stone-Weierstrass theorem, which the majority of people would not be able to understand fully. Therefore, our motivation for this research project was to construct an **elementary** proof of a similar result.
@@ -26,3 +26,7 @@ We observed that MLPs with **ReLU** activation could also be used to create **pi
 We created a **paper** detailing our proofs, and distilled the key concepts into our **research poster**. We also created **visualisations** for our poster using **Manim** and **Matplotlib**, and a video about the **epsilon-delta definition of continuity** using Manim. In the future, we would like to improve our poster by including a proof for the fact that MLPs with ReLU activation can be used to construct piecewise functions made up of simplices. We would also like to research further into the validity of our method, since we took limits at various stages which could cause issues with the error between the function and its approximation, and improve our proof based on our findings.
 
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
+
+## References
+
+[^1]: Michael Nielsen, *Neural Networks and Deep Learning* (2019). [Chapter 4: Backpropagation](http://neuralnetworksanddeeplearning.com/chap4.html).
