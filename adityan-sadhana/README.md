@@ -16,13 +16,13 @@ We approach this problem by working with a spatio-temporal graph neural network 
 
 By normalising the feature distribution we maintain the training stability and improve convergence. We calculate our loss using Mean Squared Error and use the Adam optimiser to ensure accurate and efficient training. Our testing metrics include RMSE, F1-score, Recall, and Precision. We observe that our model is able to predict the spatio-temporal dependencies between the satellites overhead, and effectively predict collisions between satellites, which we have defined as our anomaly. This novel application of DGNNs allows us to perceive the problem of satellite trajectories in a new light, enhancing our understanding of them and providing us with the opportunity to develop our representation further with additional features.
 
-<center>
+->
 | Metric              | Value  |
 |---------------------|--------|
 | Mean Squared Error  | 0.9987 |
 | Mean Absolute Error | 0.0975 | 
 | Accuracy            | 99%    |
 | F1 Score            | 1      |
-</center>
+<-
 
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
