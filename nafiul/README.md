@@ -1,24 +1,58 @@
 ![BeyondAI Banner for Research Projects](../BeyondAI_Banner_Research_Projects_2024.png)
 
-### Description of Project  
+#Machiene Learning in Early Detection of Diabetic Retinopathy
 
-**Motivation for Research Question**  
-Diabetic Retinopathy (DR) is a leading cause of blindness worldwide, with over 1 million cases of blindness and 3.28 million severe vision impairments. Early detection is critical for mitigating its impact, especially in low-resource settings where access to healthcare may be limited. This project aims to address this challenge by evaluating machine learning models for effective DR detection, focusing on their applicability in clinical practices and constrained environments.
+## Description of Project
+This project explores the application of machine learning models, specifically Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs), for the detection and classification of Diabetic Retinopathy (DR). DR is a major cause of blindness globally, with over 1 million cases of blindness and 3.28 million cases of severe vision impairments. Early and accurate detection can significantly reduce its impact, especially in low-resource settings where healthcare access is limited.
 
-**Research Question**  
-Which machine learning model, Convolutional Neural Networks (CNNs) or Vision Transformers (ViTs), performs better for detecting and classifying stages of Diabetic Retinopathy, particularly in low-resource settings?  
+## Motivation for Research Question
+The project addresses the critical need for robust and accessible diagnostic tools for DR in diverse clinical and resource-constrained environments. By comparing the performance of CNNs and ViTs, this research aims to identify the optimal model for such contexts, contributing to improved healthcare outcomes.
 
-**Method and Implementation**  
-1. **Dataset**: The Kaggle DR Dataset 2019 was utilized, comprising 224×224 retinal images categorized into five diagnostic stages of DR.  
-2. **Image Augmentation**: Techniques such as random rotations, shifts, shearing, zooming, and horizontal flipping were applied to increase dataset diversity.  
-3. **Model Architectures**:  
-   - **CNN**: Extracts local features through convolutional layers, refines them via multiple layers, and categorizes images using fully connected layers.  
-   - **ViT**: Divides images into patches, encodes spatial relationships with positional embeddings, and classifies images using self-attention mechanisms in Transformer blocks.  
-4. **Evaluation Metrics**: Training and validation accuracy, F1-score, sensitivity, specificity, and confusion matrices were analyzed to compare model performances.  
+## Research Question
+Which machine learning model—Convolutional Neural Networks (CNNs) or Vision Transformers (ViTs)—performs better for detecting and classifying stages of Diabetic Retinopathy, particularly in low-resource settings?
 
-**Results**  
-- **Binary Classification (DR vs. No DR)**: CNNs exhibited higher training accuracy (91-95%) but significant drops in validation accuracy with smaller datasets, suggesting overfitting. ViTs maintained stable validation accuracy (~63-94%), indicating better generalization.  
-- **Multiclass Classification (DR Stages)**: Both models displayed similar trends for F1-scores, sensitivity, and specificity. CNNs had higher training accuracy but plateaued validation accuracy, while ViTs showed consistent performance (~73%) for both metrics.  
+## Method and Implementation
+### Dataset
+The Kaggle DR Dataset 2019, containing 224×224 retinal images, was used. The dataset includes images categorized into five diagnostic stages of DR.
 
-**Conclusions**  
-ViTs demonstrate superior generalization and robustness, making them more suitable for diverse, unseen cases in low-resource settings. However, CNNs excel in extracting local features and identifying specific DR stages, which can be advantageous in well-augmented datasets. Both models possess unique strengths, suggesting that model selection should be based on application requirements, dataset characteristics, and resource availability. Future work could explore hybrid approaches leveraging both models' complementary capabilities.  
+### Image Augmentation
+Augmentation techniques were employed to enhance dataset diversity:
+
+*Rotation:* Random rotations up to ±15°.
+*Shifting:* Horizontal and vertical shifts up to 10%.
+*Shearing & Zooming:* Shearing up to 10% and zooming up to 20%.
+*Flipping:* Horizontal flipping.
+## Model Architectures
+### CNN (Convolutional Neural Networks):
+
+- Extracts local features using convolutional layers.
+- Refines features through multiple layers.
+- Fully connected layers categorize images based on DR stages.
+### ViT (Vision Transformers):
+
+- Splits images into 16×16 patches.
+- Encodes spatial relationships with positional embeddings.
+- Uses Transformer blocks with self-attention for feature extraction.
+- Classifies images into diagnostic stages.
+## Evaluation Metrics
+- Training and validation accuracy
+- F1-score
+- Sensitivity and specificity
+- Confusion matrices
+## Results
+### Binary Classification (DR vs. No DR)
+- CNN: Exhibited higher training accuracy (91-95%) but suffered from significant validation accuracy drops with smaller datasets, indicating overfitting.
+- ViT: Maintained stable validation accuracy (~63-94%), demonstrating better generalization.
+### Multiclass Classification (DR Stages)
+Both CNNs and ViTs showed similar trends for F1-scores, sensitivity, and specificity.
+- CNNs achieved higher training accuracy but plateaued in validation accuracy (70-75%).
+- ViTs displayed consistent performance (~73%) for training and validation, suggesting better generalization but limited peak performance.
+### Conclusions
+- ViTs: Offer better generalization and robustness, making them more suitable for diverse, unseen cases in low-resource settings.
+- CNNs: Excel in extracting local features and distinguishing specific DR stages, performing well with well-augmented datasets.
+- Hybrid Potential: Leveraging the complementary strengths of CNNs and ViTs could lead to optimized detection systems.
+Future research could explore hybrid architectures, fine-tuning techniques, and testing on larger and more diverse datasets for enhanced performance and broader applicability.
+
+## Mentor
+Devendra Singh Dhami
+Mentorship and guidance were instrumental in shaping the methodology and execution of this project.
