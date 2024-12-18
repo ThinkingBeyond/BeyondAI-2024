@@ -1,6 +1,10 @@
 ![BeyondAI Banner for Research Projects](../BeyondAI_Banner_Research_Projects_2024.png)
 
-#Machiene Learning in Early Detection of Diabetic Retinopathy
+# Machiene Learning in Early Detection of Diabetic Retinopathy
+### Student Researcher
+MD. Nafiul Haque
+### Mentor
+Devendra Singh Dhami
 
 ## Description of Project
 This project explores the application of machine learning models, specifically Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs), for the detection and classification of Diabetic Retinopathy (DR). DR is a major cause of blindness globally, with over 1 million cases of blindness and 3.28 million cases of severe vision impairments. Early and accurate detection can significantly reduce its impact, especially in low-resource settings where healthcare access is limited.
@@ -47,12 +51,18 @@ Augmentation techniques were employed to enhance dataset diversity:
 Both CNNs and ViTs showed similar trends for F1-scores, sensitivity, and specificity.
 - CNNs achieved higher training accuracy but plateaued in validation accuracy (70-75%).
 - ViTs displayed consistent performance (~73%) for training and validation, suggesting better generalization but limited peak performance.
-### Conclusions
+## Conclusions
 - ViTs: Offer better generalization and robustness, making them more suitable for diverse, unseen cases in low-resource settings.
 - CNNs: Excel in extracting local features and distinguishing specific DR stages, performing well with well-augmented datasets.
 - Hybrid Potential: Leveraging the complementary strengths of CNNs and ViTs could lead to optimized detection systems.
 Future research could explore hybrid architectures, fine-tuning techniques, and testing on larger and more diverse datasets for enhanced performance and broader applicability.
+## Reference
+- Vishal Awasthi a, Namita Awasthi b, Hemant Kumar c, Shubhendra Singh c, Prabal Pratap Singh d. (2021). Optimized vision transformer for diabetic retinopathy detection using Harris Hawk optimization. 
+- Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu, D., Narayanaswamy, A.,  & Webster, D. R. (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. Jama, 316(22), 2402-2410. 
+- Ting, D. S. W., Cheung, C. Y. L., Lim, G., Tan, G. S. W., Quang, N. D., Gan, A., & Wong, T. Y. (2017). Development and validation of a deep learning system for diabetic retinopathy and related eye diseases using retinal images from multiethnic populations with diabetes. Jama, 318(22), 2211-2223.
+- Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). Imagenet classification with deep convolutional neural networks. In Advances in neural information processing systems (pp. 1097-1105).
 
-## Mentor
-Devendra Singh Dhami
+## Acknowledgement
+- Dr. Devendra Singh Dhami
+- Dr. Filip Bar
 Mentorship and guidance were instrumental in shaping the methodology and execution of this project.
