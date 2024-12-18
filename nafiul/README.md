@@ -66,3 +66,4 @@ Future research could explore hybrid architectures, fine-tuning techniques, and 
 - Dr. Devendra Singh Dhami
 - Dr. Filip Bar
 Mentorship and guidance were instrumental in shaping the methodology and execution of this project.
+> **Further Reading**: A detailed overview of this project is presented in our research poster, available in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
