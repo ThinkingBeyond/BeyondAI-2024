@@ -4,7 +4,7 @@
 ### Student Researcher
 MD. Nafiul Haque
 ### Mentor
-Devendra Singh Dhami
+Dr. Devendra Singh Dhami
 
 ## Description of Project
 This project explores the application of machine learning models, specifically Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs), for the detection and classification of Diabetic Retinopathy (DR). DR is a major cause of blindness globally, with over 1 million cases of blindness and 3.28 million cases of severe vision impairments. Early and accurate detection can significantly reduce its impact, especially in low-resource settings where healthcare access is limited.
