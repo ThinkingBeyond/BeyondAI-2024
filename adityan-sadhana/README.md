@@ -18,5 +18,12 @@ By normalising the feature distribution we maintain the training stability and i
 
 ![image](https://github.com/user-attachments/assets/985f0d5a-5ae0-47bf-bcf6-11d1c01a6dad)
 
+| Metric              | Value  |   |   |   |
+|---------------------|--------|---|---|---|
+| Mean Squared Error  | 0.9987 |   |   |   |
+| Mean Absolute Error | 0.0975 |   |   |   |
+| Accuracy            | 99%    |   |   |   |
+| F1 Score            | 1      |   |   |   |
+
 
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
