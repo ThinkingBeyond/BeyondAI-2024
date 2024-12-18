@@ -22,10 +22,10 @@ The Kaggle DR Dataset 2019, containing 224×224 retinal images, was used. The da
 ### Image Augmentation
 Augmentation techniques were employed to enhance dataset diversity:
 
-*Rotation:* Random rotations up to ±15°.
-*Shifting:* Horizontal and vertical shifts up to 10%.
-*Shearing & Zooming:* Shearing up to 10% and zooming up to 20%.
-*Flipping:* Horizontal flipping.
+*Rotation:* Random rotations up to ±15°.  
+*Shifting:* Horizontal and vertical shifts up to 10%.  
+*Shearing & Zooming:* Shearing up to 10% and zooming up to 20%.  
+*Flipping:* Horizontal flipping.  
 ## Model Architectures
 ### CNN (Convolutional Neural Networks):
 
@@ -65,5 +65,6 @@ Future research could explore hybrid architectures, fine-tuning techniques, and 
 ## Acknowledgement
 - Dr. Devendra Singh Dhami
 - Dr. Filip Bar
+  
 Mentorship and guidance were instrumental in shaping the methodology and execution of this project.
 > **Further Reading**: A detailed overview of this project is presented in our research poster, available in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
