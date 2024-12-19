@@ -11,7 +11,7 @@ Ordinary Differential Equation (ODE) methods play a vital role in modeling dynam
 # 2. Research question
 How do various ODE solvers influence the accuracy and computational performance of Neural Ordinary Differential Equations?
 
-## 3.  Method and implementation
+# 3.  Method and implementation
 - **Dataset:** Spiral dataset with 2000 points.
 - **Methods:** Euler’s method, Runge-Kutta 4 (RK4), and Dormand-Prince 5 (Dopri5) adaptive solver from the torchdiffeq library.
 - **Evaluation Metrics:** Training loss and computational time over 400 epochs.
