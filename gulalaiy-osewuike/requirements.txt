@@ -1,6 +1,0 @@
-numpy==1.24.3
-torch==2.0.0+cu117
-torchvision==0.15.0
-matplotlib==3.7.1
-seaborn==0.12.2
-pandas==1.5.3
