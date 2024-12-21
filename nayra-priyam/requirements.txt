@@ -1,0 +1,8 @@
+matplotlib==3.8.0
+matplotlib-inline==0.1.7
+matplotlib-venn==1.1.1
+torch==2.5.1
+torchaudio==2.5.1
+torchsummary==1.5.1
+torchvision==0.20.1
+
