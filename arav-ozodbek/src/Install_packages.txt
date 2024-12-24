@@ -1,2 +1,0 @@
-Install packages using:
-!pip install -r requirements.txt
