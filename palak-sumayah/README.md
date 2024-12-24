@@ -3,7 +3,7 @@
 # Non - Linear Classifiers
 This project aims to explore and compare the performance of various linear and non-linear classification techniques, highlighting their strengths and weaknesses when dealing with complex, non-linearly separable data. 
 
-# Motivation
+## Motivation
 Linear classifiers, such as Logistic Regression (LR), are widely used for classification tasks due to their simplicity, interpretability, and efficiency. These models work by drawing a straight line (or hyperplane) to separate different classes in the feature space. However, their performance can be severely limited in real-world applications, where data is often complex and not linearly separable. In such cases, linear classifiers struggle to model the intricate relationships within the data, leading to poor accuracy and generalization.
 
 Real-world data is rarely perfectly linear. Many datasets exhibit complex patterns that cannot be captured by simple linear decision boundaries. For instance, when classes are intertwined in circular, spiral, or other non-linear patterns, linear classifiers fail to separate them effectively. This highlights the need for non-linear classifiers, which are capable of modeling complex, non-linear decision boundaries that adapt to the underlying structure of the data.
@@ -11,7 +11,7 @@ Real-world data is rarely perfectly linear. Many datasets exhibit complex patter
 In this research, we focus on non-linear classification techniques that can handle complex patterns. The models we explore include Support Vector Machines (SVM) with an RBF kernel, Decision Trees (DT), Random Forests (RF), Gradient Boosting (GB), and Naive Bayes (NB). These models have been specifically designed to overcome the limitations of linear classifiers by learning more flexible decision boundaries. Understanding their strengths, weaknesses, and applications will help guide the selection of appropriate models for different types of data.
 
 ---
-# Research Question
+## Research Question
 What are the most common non-linear classification techniques?
 This question aims to identify and explore the most widely used non-linear classification techniques, which in this study include SVM with an RBF kernel, Decision Trees, Random Forests, Gradient Boosting, and Naive Bayes.
 
@@ -28,9 +28,10 @@ How do these techniques perform on different types of non-linearly separable dat
 Finally, we will assess how each model performs on datasets that are known to be non-linearly separable, considering how well they handle real-world data that exhibits complex, non-linear relationships.
 
 ---
-# Method and Implementation
+## Method and Implementation
 To evaluate the performance of various non-linear classifiers, we adopted a comprehensive experimental approach using three diverse datasets. Each dataset presented different levels of complexity and varying feature types, ensuring a broad evaluation of classifier performance across different real-world scenarios. The primary goal was to assess how well the classifiers can handle non-linearly separable data.
 For each dataset, we split the data into 70% training and 30% testing sets. The training set was used to train the classifiers, while the testing set was employed to evaluate each model's ability to generalize to unseen data. This division ensures that the models were not overfitting to the data and that their performance was assessed fairly on data they had not encountered during training.
+
 **Classifiers Evaluated:**
 We focused on evaluating the following non-linear classifiers:
 Logistic Regression \ Support Vector Machine with an RBF kernel \ Decision Tree  \ Random Forest \ Gradient Boosting \ Naive Bayes
@@ -45,14 +46,14 @@ Training Time - The amount of time each model took to train on the dataset, whic
 
 The models were implemented using Python and the scikit-learn library, which provides efficient implementations of the classifiers used. Data visualization was conducted using matplotlib to better understand the decision boundaries learned by each classifier. For each model, we recorded the training time and computed the classification metrics using scikit-learn's built-in functions.
 
-# Results
+## Results
 In the analysis of the Moon dataset with high noise, the classifiers exhibited varying performance based on their strengths and limitations in handling noisy, non-linearly separable data.
 SVM (RBF kernel) emerged as the top performer, slightly outperforming Logistic Regression by capturing complex, non-linear patterns in the data.
 Logistic Regression and Naive Bayes both showed solid performance, but were less effective in managing the noise, with Naive Bayes struggling due to its assumptions about feature independence.
 Random Forest and Gradient Boosting demonstrated robust performance, especially in terms of recall, but were still affected by the high noise levels, reducing their ability to generalize effectively. Gradient Boosting showed the best balance between precision and recall, making it a reliable choice despite the noise.
 Decision Tree performed the weakest, struggling with overfitting and failing to generalize in the noisy environment.
 
-# Conclusions 
+## Conclusions 
 - Logistic Regression and Naive Bayes are faster but less accurate.
 - Random Forest and Gradient Boosting are effective for noisy or imbalanced datasets, balancing accuracy and robustness while reducing overfitting, though they are more computationally expensive than simpler classifiers.
 - Overall, non-linear classifiers like SVM, Random Forest, and Gradient Boosting showed superior performance in dealing with noisy, complex data, while simpler linear classifiers, such as Logistic Regression and Naive Bayes, were less effective in this context.
