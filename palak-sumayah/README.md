@@ -32,11 +32,11 @@ Finally, we will assess how each model performs on datasets that are known to be
 To evaluate the performance of various non-linear classifiers, we adopted a comprehensive experimental approach using three diverse datasets. Each dataset presented different levels of complexity and varying feature types, ensuring a broad evaluation of classifier performance across different real-world scenarios. The primary goal was to assess how well the classifiers can handle non-linearly separable data.
 For each dataset, we split the data into 70% training and 30% testing sets. The training set was used to train the classifiers, while the testing set was employed to evaluate each model's ability to generalize to unseen data. This division ensures that the models were not overfitting to the data and that their performance was assessed fairly on data they had not encountered during training.
 
-**Classifiers Evaluated:**
+- **Classifiers Evaluated:**
 We focused on evaluating the following non-linear classifiers:
 Logistic Regression \ Support Vector Machine with an RBF kernel \ Decision Tree  \ Random Forest \ Gradient Boosting \ Naive Bayes
 
-**Performance Metrics:**
+- **Performance Metrics:**
 To evaluate the effectiveness of each classifier, we used a combination of performance metrics:
 Accuracy - The overall percentage of correct predictions made by the classifier.
 Precision - The proportion of true positive predictions relative to all positive predictions made.
