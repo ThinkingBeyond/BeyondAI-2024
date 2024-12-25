@@ -1,6 +1,6 @@
 ![BeyondAI Banner for Research Projects](../BeyondAI_Banner_Research_Projects_2024.png)
 
-# Limitations of Multilayer Perceptrons
+# Optimizing MLPs for MNIST
 
 **by**
 - Nayra Saadawy
