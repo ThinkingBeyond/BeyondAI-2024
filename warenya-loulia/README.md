@@ -50,7 +50,7 @@ We were not able to reproduce Ruhe's (2023) tetris object trajectory application
 
 ## Credits
 **Student Researchers:** Loulia Jaafari, Warenya Ranmini
-**Mentors:** Dr.Filip Bar
+**Mentors:** Dr. Filip Bar, Matthew Pugh
 
 ---
 
