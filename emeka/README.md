@@ -45,8 +45,13 @@ The motivation behind the project is to bridge the gap by comparing the performa
 
 5. **Libraries**: `sklearn`, `pytorch`, `matplotlib`, `pykan`.  
 
-## Result(to be refined)
+## Result
+1. In terms of convergence rate, both models converges at a similar though KAN converges faster. Each model reaching convergence within 10-50 EPOCHS.KAN converges with a higher execution time.
 
+2. Both models reach a very high accuracy, recall, precision, f1-score. They have a lower loss. MLP has a loss of about 0.1% while KAN experiences a larger  loss of 12 -30%.
+
+3. KAN is very sensitive to noise which requires careful hyperparameter tunning to prevent overfitting. Using GridSearchCV for both models, I was able to get the highest hyperparameter to be used for each model. Adjusting the hyperparameter of KAN makes converges 
+fluctuate while adjusting that of MLP reduces the accuracy. 
 ## Conclusions
-
+Both models are very good for classification. KAN performs similarly to  a MLP with lower number of layer.
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
