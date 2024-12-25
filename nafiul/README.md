@@ -2,7 +2,7 @@
 
 # Machiene Learning in Early Detection of Diabetic Retinopathy
 ### Student Researcher
-MD. Nafiul Haque
+Nafiul Haque
 ### Mentor
 Dr. Devendra Singh Dhami
 
