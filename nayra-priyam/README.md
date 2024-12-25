@@ -46,9 +46,9 @@ After all the testing, the best combination we found was **Sigmoid activation**,
 
 # Conclusion
 
-In this research, we systematically explored the effects of key parameters—activation function, learning rate, and step size—on the performance of a Multi-Layer Perceptron (MLP) model. By optimizing each parameter iteratively, we identified the closest as possible to ideal configuration: the **Sigmoid activation function**, a **learning rate of 0.001**, and a **step size of 20**. This combination yielded the most effective model in terms of performance and convergence.
+In this research, we systematically explored the effects of key parameters—activation function, learning rate, and step size—on the performance of a Multi-Layer Perceptron (MLP) model. By optimizing each parameter iteratively, this configuration: **Sigmoid activation function**, a **learning rate of 0.001**, and a **step size of 20**, yielded the least final loss value compared to the other combinations.
 
-The results emphasize the critical role of parameter tuning in neural network design. Even small adjustments can have a significant impact on model behavior and effectiveness, making systematic experimentation essential for achieving optimal results.
+The results emphasize the critical role of parameter tuning in neural network design. Even small adjustments can have a significant impact on model behavior and effectiveness, making systematic experimentation essential for achieving better results.
 
 
 # References
