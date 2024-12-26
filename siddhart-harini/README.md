@@ -65,7 +65,7 @@ The RX gate creates a smooth, wave like pattern with some structure, allowing it
 
 **Future Work:**
 
-Our project showed that using the RX gate approach worked better than  grid search and random search for tuning hyperparameters by addressing the limitations of these methods. The next step is to expand our research by comparing our method with other approaches like Monte Carlo with an even distribution, normal distribution,  Poisson distribution to see how well it performs.
+Our project showed that using the RX gate approach worked better than  grid search and random search for tuning hyperparameters by addressing the limitations of these methods. The next step is to expand our research by comparing our method with other approaches like Monte Carlo with an even distribution, normal distribution, Poisson distribution to see how well it performs.
  
 
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
