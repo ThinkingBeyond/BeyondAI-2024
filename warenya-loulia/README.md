@@ -46,6 +46,8 @@ We were not able to reproduce Ruhe's (2023) tetris object trajectory application
 
 ![Screenshot 2024-12-04 133125](https://github.com/user-attachments/assets/a36b0ca2-ab33-49a1-8fee-5871143063d8)
 
+**P.S:** The code is VERY long, the reason for that is most of the CliffordLayers functions weren't being called as intended and we had to copy the original code directly from the source before we could write any of our own functions. 
+
 ---
 
 ## Credits
