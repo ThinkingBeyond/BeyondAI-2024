@@ -21,6 +21,17 @@ Meanwhile, we researched core concepts for our proof, such as the **epsilon-delt
 
 We observed that MLPs with **ReLU** activation could also be used to create **piecewise functions** which consisted of **simplices** instead of parallel hyperplanes for the sigmoid case. Although we did not complete a proof showing that piecewise functions can be created using MLPs with ReLU activation for this research project, we assumed this was true and also proved that these piecewise functions could also **approximate any continuous function**. 
 
+## Visualisations
+
+We created four Google Colabs for our project to create our visualisations.
+### 1. Approximation_Using_a_Piecewise_Constant_Function_in_2D_Final.ipynb
+Creates a interactive plot of a piecewise constant function(which would be constructed by MLPs with sigmoid activation) and a continuous function which the piecewise function is approximating. The user can change the number of sections the piecewise function has. The user can choose one of three continuous functions to approximate and all the plots are in 2D. This helps aid understanding of how increasing the number of sections in the piecewise function improves the approximation.
+### 2. Visualisations_for_Poster_Final.ipynb
+Creates various visualisations for our research poster. It uses the Manim library to create visualisations. It creates a visualisation of a discrete piecewise function, then four visualisations to illustrate the general structure of the proof: a visualisation of a step function, a visualisation of a bump function, a visualisation of a tower function and a visualisation of another discrete piecewise function.
+### 3. Simplex_Construction.ipynb
+Creates a plot of a ReLU function, a simplex and a piecwise function constructed from simplices in 3D. This illustrates what these functions would look like, showing how the piecewise function would constructed (by a MLP with ReLU activation), and are used as a visual aid in our poster to aid understanding of our proof.
+### 4. Continuity_Video_Final.ipynb
+Creates a video explaining the epsilon-delta definition of continuity. It is linked to in our poster using a QR code but can also be downloaded in 2 parts by running the code and can also be found in our folder in the repository.
 ## Results and future plans
 
 We created a **paper** detailing our proofs, and distilled the key concepts into our **research poster**. We also created **visualisations** for our poster using **Manim** and **Matplotlib**, and a video about the **epsilon-delta definition of continuity** using Manim. In the future, we would like to improve our poster by including a proof for the fact that MLPs with ReLU activation can be used to construct piecewise functions made up of simplices. We would also like to research further into the validity of our method, since we took limits at various stages which could cause issues with the error between the function and its approximation, and improve our proof based on our findings.
