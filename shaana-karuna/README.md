@@ -31,7 +31,7 @@ Creates various visualisations for our research poster. It uses the Manim librar
 ### 3. Simplex_Construction.ipynb
 Creates a plot of a ReLU function, a simplex and a piecwise function constructed from simplices in 3D. This illustrates what these functions would look like, showing how the piecewise function would constructed (by a MLP with ReLU activation), and are used as a visual aid in our poster to aid understanding of our proof.
 ### 4. Continuity_Video_Final.ipynb
-Creates a video explaining the epsilon-delta definition of continuity. It is linked to in our poster using a QR code but can also be downloaded in 2 parts by running the code is also uploaded below:
+Creates a video explaining the epsilon-delta definition of continuity. It is linked to in our poster using a QR code but can also be downloaded in 2 parts by running the code is also uploaded here:
 https://github.com/user-attachments/assets/0fb58fc9-8bfb-4275-adac-ebc01350c839
 
 ## Results and future plans
