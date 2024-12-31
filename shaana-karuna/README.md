@@ -31,7 +31,9 @@ Creates various visualisations for our research poster. It uses the Manim librar
 ### 3. Simplex_Construction.ipynb
 Creates a plot of a ReLU function, a simplex and a piecwise function constructed from simplices in 3D. This illustrates what these functions would look like, showing how the piecewise function would constructed (by a MLP with ReLU activation), and are used as a visual aid in our poster to aid understanding of our proof.
 ### 4. Continuity_Video_Final.ipynb
-Creates a video explaining the epsilon-delta definition of continuity. It is linked to in our poster using a QR code but can also be downloaded in 2 parts by running the code and can also be found in our folder in the repository.
+Creates a video explaining the epsilon-delta definition of continuity. It is linked to in our poster using a QR code but can also be downloaded in 2 parts by running the code is also uploaded below:
+https://github.com/user-attachments/assets/0fb58fc9-8bfb-4275-adac-ebc01350c839
+
 ## Results and future plans
 
 We created a **paper** detailing our proofs, and distilled the key concepts into our **research poster**. We also created **visualisations** for our poster using **Manim** and **Matplotlib**, and a video about the **epsilon-delta definition of continuity** using Manim. In the future, we would like to improve our poster by including a proof for the fact that MLPs with ReLU activation can be used to construct piecewise functions made up of simplices. We would also like to research further into the validity of our method, since we took limits at various stages which could cause issues with the error between the function and its approximation, and improve our proof based on our findings.
