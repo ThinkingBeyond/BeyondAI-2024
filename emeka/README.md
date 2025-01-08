@@ -48,7 +48,7 @@ The motivation behind the project is to bridge the gap by comparing the performa
 
 3. Both models exhibit strong generalization. Testing accuracy is comparable to training accuracy for both MLP and KAN, with no signs of overfitting. This confirms that both models are robust and reliable for unseen data. KAN requires keen hyperparameter tunning as it is very sensitive to noise, the graph displayed deflection to noise even after careful tuning.
 ## Conclusions
-1. The code demonstrates a comprehensive comparison of MLP and KAN for the Wisconsin Breast Cancer dataset. The results indicate that both models can achieve similar accuracies for classification, but MLP demonstrates faster convergence and better execution time.
+1. The results after comprehensive comparison of MLP and KAN over both dataset indicates that both models can achieve similar accuracies for classification, but MLP demonstrates faster convergence and better execution time.
 2. MLP is computationally more efficient than KAN, particularly for larger datasets. Its faster convergence and lower execution time make it a better choice for high-dimensional or time-sensitive applications.
 3. For tasks requiring quick training and prediction times (e.g., real-time or large-scale systems), MLP is the preferred choice due to its faster convergence and lower computational cost.
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
