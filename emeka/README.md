@@ -24,34 +24,31 @@ The motivation behind the project is to bridge the gap by comparing the performa
    - **Wisconsin Breast Cancer Dataset**: 699 samples with 9 features, classifying 2 cancer types (benign vs. malignant).  
    - Preprocessing included standardization and train-test splitting.  
 
-2. **Model Implementation**:  
-   - **KANs**:  
-     - **Wine Dataset**: `width=[13,5,3]`, `grid=5`, `k=3`.  
-     - **Cancer Dataset**: `width=[9,5,5,5,2]`, `grid=5`, `k=3`.  
-   - **MLPs**:  
-     - **Wine Dataset**: `hidden_layer_sizes=(40,25,10)`, `max_iter=500`, `activation='tanh'`.  
-     - **Cancer Dataset**: `hidden_layer_sizes=(5,5,5)`, `max_iter=1000`, `activation='tanh'`.  
-     - Different width of KANs lower than the number of layers would be used 
-
-3. **Metrics for Evaluation**:  
+2. **Model Implementation**:
+   The models were compared by adjusting the width of the layers, using a moderate width,larger width and a smaller.The models were run 3 times to get different result at different width. Hyperparameter tunnig using GridSearchCV was used to get the best parameter and hyperparameter for the layers chosen.
+   - **Wine Dataset**: 2 hidden layers for each model comparison run.
+   - **Wisconsin Breast Cancer Dataset**: 1 hidden layer for each model comparison run
+   
+4. **Metrics for Evaluation**:  
    - **Accuracy**: Measure of classification correctness.  
    - **Loss**: Convergence and overfitting behavior.  
    - **Precision, Recall, F1-Score**: Class-specific performance.  
    - **Execution Time**: Computational efficiency.  
 
-4. **Training and Comparison**:  
+5. **Training and Comparison**:  
    - Both models were trained over 100 epochs using different set of hidden layers 
    - Results included convergence curves for loss and accuracy, and confusion matrices to evaluate predictions.  
 
-5. **Libraries**: `sklearn`, `pytorch`, `matplotlib`, `pykan`.  
+6. **Libraries**: `sklearn`, `pytorch`, `matplotlib`, `pykan`.  
 
 ## Result
-1. In terms of convergence rate, both models converges at a similar though KAN converges faster. Each model reaching convergence within 10-50 EPOCHS.KAN converges with a higher execution time.
+1. MLP converges faster than KAN, as observed in the accuracy and loss graphs. This indicates that MLP reaches optimal performance in fewer epochs, making it suitable for tasks requiring quick results.
 
-2. Both models reach a very high accuracy, recall, precision, f1-score. They have a lower loss. MLP has a loss of about 0.1% while KAN experiences a larger  loss of 12 -30%.
+2. Both MLP and KAN achieve similar levels of final accuracy, with a difference of less than 0.03. However, MLP's accuracy was greater than KAN's accuracy. MLP also has significantly less loss values compared to KAN.
 
-3. KAN is very sensitive to noise which requires careful hyperparameter tunning to prevent overfitting. Using GridSearchCV for both models, I was able to get the highest hyperparameter to be used for each model. Adjusting the hyperparameter of KAN makes converges 
-fluctuate while adjusting that of MLP reduces the accuracy. 
+3. Both models exhibit strong generalization. Testing accuracy is comparable to training accuracy for both MLP and KAN, with no signs of overfitting. This confirms that both models are robust and reliable for unseen data. KAN requires keen hyperparameter tunning as it is very sensitive to noise, the graph displayed deflection to noise even after careful tuning.
 ## Conclusions
-Both models are very good for classification. KAN performs similarly to  a MLP with lower number of layer.
+1. The code demonstrates a comprehensive comparison of MLP and KAN for the Wisconsin Breast Cancer dataset. The results indicate that both models can achieve similar accuracies for classification, but MLP demonstrates faster convergence and better execution time.
+2. MLP is computationally more efficient than KAN, particularly for larger datasets. Its faster convergence and lower execution time make it a better choice for high-dimensional or time-sensitive applications.
+3. For tasks requiring quick training and prediction times (e.g., real-time or large-scale systems), MLP is the preferred choice due to its faster convergence and lower computational cost.
 > The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
