@@ -3,7 +3,7 @@
 # Kolmogorov Arnold Networks vs Multi-Layer Perceptrons 
 
 ## Project Description
-This project focuses on comparing Kolmogorov-Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) in classification tasks. The primary goal is to evaluate the claim made by Ziming Liu and colleagues in their paper, which suggests that KANs outperform MLPs. Through detailed analysis and experimentation, this study aims to validate or challenge their assertion.
+This project focuses on comparing Kolmogorov-Arnold Networks (KANs) and Multi-Layer Perceptrons (MLPs) in classification tasks. The primary goal is to evaluate the claim made by Ziming Liu and colleagues in their paper, which suggests that KANs perform similarly to MLPs with less parameters. Through detailed analysis and experimentation, this study aims to validate or challenge their assertion. We also aim to identify differences in the execution of each model.
 
 
 ## Motivation
