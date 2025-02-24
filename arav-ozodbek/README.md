@@ -69,4 +69,4 @@ pip install -r requirements.txt
 # 3. Verify installation by running a Python script (e.g., resnet_training.py):
 python src/resnet_training.py
 
-The research poster for this project can be found in the [BeyondAI Proceedings 2024](https://thinkingbeyond.education/beyondai_proceedings_2024/).
+**The research poster for this project can be found in the** [**BeyondAI Proceedings 2024**](https://thinkingbeyond.education/beyondai_proceedings_2024/).
